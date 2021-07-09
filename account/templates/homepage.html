@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>PACATION</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/homep.css' %}">
+    </head>
+    <body style="font-family: 'Amatic SC', cursive;">
+        <div class="top col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: #76C4AE; display: flex; flex-direction: row;padding: 0 150px;">
+            <div class="top-img">
+            <img src="{% static 'img/pacationlogo.png' %}" alt="Logo" width="100" height="100">
+            </div>
+            <div class="top-button" style="position: absolute; right: 0;">
+            <a href="" class="btn btn-success btn-sm">List Your Service</a>
+            <a href="" class="btn btn-success btn-sm">Customer Login</a>
+            </div>
+        </div>
+        <div style="padding: 0 150px;">
+            <center>
+                <p class="fs-3">WHAT ARE YOU LOOKING FOR?</p>
+                <a href="" class="btn btn-outline-success btn-lg" style="margin:5px;" tabindex="-1" role="button" aria-disabled="true">VENUES</a>
+                <a href="" class="btn btn-outline-success btn-lg" style="margin:5px;" tabindex="-1" role="button" aria-disabled="true">VENDORS</a>
+                <br><br>
+                <form method="post">
+                <div class="input-group flex-nowrap" style="border: 2px solid #76C4AE;border-radius: 5px;"> 
+                    <span class="input-group-text" id="addon-wrapping">&#128205</span>
+                    <input type="text" class="form-control" placeholder="Location" aria-label="location" aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">&#128340</span>
+                    <input type="text" class="form-control" placeholder="Date, Time" aria-label="datetime" aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">&#128101</span>
+                    <input type="text" class="form-control" placeholder="Capacity" aria-label="capacity" aria-describedby="addon-wrapping">
+                    <button class='btn btn-success'>Search</button>
+                </div>
+                </form>
+            </center>
+            <ul>
+                <li>
+                <a href="">Bands & DJs</a>
+                </li>
+                <li>
+                <a href="">Bridal Car</a>
+                </li>
+                <li>
+                <a href="">Cake</a>
+                </li>
+                <li>
+                <a href="">Catering</a>
+                </li>
+                <li>
+                <a href="">Event Planner</a>
+                </li>
+                <li>
+                <a href="">Flowers</a>
+                </li>
+                <li>
+                <a href="">Hair & Make-Up</a>
+                </li>
+                <li>
+                <a href="">Invitations</a>
+                </li>
+                <li>
+                <a href="">Jewellery</a>
+                </li>
+                <li>
+                <a href="">Photographer</a>
+                </li>
+                <li>
+                <a href="">Wedding Dressing</a>
+                </li>
+                <li>
+                <a href="">Wedding Planner</a>
+                </li>
+            </ul>
+            <a href="" >All Vendors</a>
+            <br><br>
+            <h4 align="center">Venues By Category</h4>
+            <div class="catone">
+                <a href="">
+                    <div class="img-hover-zoom">
+                        <img src="{% static 'img/cat/weddingcat.png' %}" alt="wedding" style="width:600px;">
+                    </div>
+                    <h4 class="fs-2" >Weddings</h4>
+                </a>
+                <a href="">
+                    <div class="img-hover-zoom">
+                    <img src="{% static 'img/cat/ceremonycat.png' %}" alt="ceremony" style="width:250px;">
+                    </div>
+                    <h4 class="fs-2">Ceremony</h4>
+                </a>
+                <a href="">
+                    <div class="img-hover-zoom">
+                    <img src="{% static 'img/cat/conferencecat.png' %}" alt="conference" style="width:345;">
+                    </div>
+                    <h4 class="fs-2">Conferences</h4>
+                </a>
+            </div>
+            <div class="cattwo">
+                <a href="">
+                    <div class="img-hover-zoom">
+                    <img src="{% static 'img/cat/condolencescat.png' %}" alt="condolences" style="width:405px;">
+                    </div>
+                    <h4 class="fs-2" >Condolences</h4>
+                </a>
+                <a href="">
+                    <div class="img-hover-zoom">
+                    <img src="{% static 'img/cat/chaletfarmcat.png' %}" alt="chalet & farm" style="width:330px;">
+                    </div>
+                    <h4 class="fs-2">Chalet</h4>
+                </a>
+                <a href="">
+                    <div class="img-hover-zoom">
+                    <img src="{% static 'img/cat/otherscat.png' %}" alt="others" style="width:445px;">
+                    </div>
+                    <h4 class="fs-2">Others</h4>
+                </a>
+            </div>
+            <br><br><br>
+            <h4`>Most Rented Halls</h4>
+            <p>Find You Rented halls, For Your Availability</p>
+            <br><br><br>
+            <h4 align="center">Vendor Services</h4>
+
+            <div class="serviceone">
+                <a href="">
+                    <div class="img-hover-zoom">
+                        <img src="{% static 'img/services/catering.png' %}" alt="Catering">
+                    </div>
+                    <h3>Catering</h3>
+                </a>
+                <a href="">
+                    <div class="img-hover-zoom">
+                        <img src="{% static 'img/services/weddingdress.png' %}" alt="Wedding Dress">
+                    </div>
+                    <h3>Wedding Dress</h3>
+                </a>
+                <a href="">
+                    <div class="img-hover-zoom">
+                        <img src="{% static 'img/services/eventplanner.png' %}" alt="Event Planner">
+                    </div>
+                    <h3>Event Planner</h3>
+                </a>
+            </div>
+            <div class="servicetwo">
+                <a href="">
+                    <div class="img-hover-zoom">
+                        <img src="{% static 'img/services/invitation.png' %}" alt="Invitation">
+                    </div>
+                    <h3>Invitation</h3>
+                </a>
+                <a href="">
+                    <div class="img-hover-zoom">
+                        <img src="{% static 'img/services/hairmakeup.png' %}" alt="Hair & Make-Up">
+                    </div>
+                    <h3>Hair & Make-Up</h3>
+                </a>
+                <a href="">
+                    <div class="img-hover-zoom">
+                        <img src="{% static 'img/services/jewellery.png' %}" alt="Jewellery">
+                    </div>
+                    <h3>Jewellery</h3>
+            </a>
+            </div>
+            <p>Total services # vendors</p>
+            <a href="">View All</a>
+            <br><br><br>
+
+            <div style="text-align: center; border-bottom: 2px solid #76C4AE;  line-height: 0.1em; margin: 10px 0 20px; ">
+                <img src="{% static 'img/pacationnoback.png' %}" width="100" height="100">
+            </div>
+            
+            <p align="center">PACATION, it mean “peace”. For a noun, it’s to show the act of making peace. No matter to anyone, anyting, anyway, anyhow, anytime, or anywhere. Making peace helps a lot, it could avoid misunderstanding, anger, hatred, fights, etc. That is why making peace is important -- PACATION.</p>
+            <p align="center">Here at PACATION we does a lot of services, like renting a venue, or held an event or anything that can be done by get a place to organise something that makes joys and loves. You want a party? We got pools and beaches for you to spend a day or a night at with your friends! You’re getting married? We do have beautiful and wide space for you to have a memorable wedding with your partner and all of your guest. You can even hire photographer from us to take beautiful picture during the wedding, we could guarantee the output will be perfect if the event planner package is included where we will help planning activities, music, foods, decoration, etc. </p>
+            <p align="center">You want an event? Hit us up, we’ll have a meet a create the best event you’ll ever experience in your life!</p>
+            <br><br><br><br><br><br>
+            <div style="display: flex; flex-direction: row; height:50px">
+                <div class="col-md-4" style="display: flex; flex-direction: row;">
+                    <input type="email" class="form-control" id="subsemail" aria-describedby="emailHelp" placeholder="Email Here">
+                    <input class="btn btn-success btn-sm" type="submit" value="Subscribe">
+                </div>
+                <div style="text-align:right; position: absolute; right: 0;">
+                    <div class="contactus col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <p>Subscribe to us!</p>
+                        <p>We will send best deal every week to you</p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <center><a href="" class="btn btn-success btn-lg" style="text-align:center;">Click here to share us your plan</a></center>
+        </div>  
+
+            <div class="bottom col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="contactus col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p class="fs-3"><u>Contact Us</u></p>
+                    <p class="fs-5">&#128205 Your Heart</p>
+                    <p class="fs-5">&#128231 my.info@infrontconsulting.com.my</p>
+                    <p class="fs-5">&#129305 999 / 1300-88-2525</p>
+                </div>
+                <div class="quicklink col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p class="fs-3"><u>Quick Links</u></p>
+                    <a class="fs-5" href="">About Us</a><br><br>
+                    <a class="fs-5" href="">FAQ</a><br><br>
+                    <a class="fs-5" href="">Privacy Policy</a><br><br>
+                    <a class="fs-5" href="">Terms and Condition</a><br><br>
+                    <a class="fs-5" href="">Contact Us</a>
+                </div>
+            </div>
+    </body>
+</html>

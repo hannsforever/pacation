@@ -1,0 +1,60 @@
+.catone, .cattwo, .serviceone, .servicetwo{
+    display: flex;
+    flex-direction: row;
+}
+
+.catone a, .cattwo a, .serviceone a, .servicetwo a{
+    position:relative;
+    color:black;
+}
+
+.catone h4, .cattwo h4, .serviceone h3, .servicetwo h3{
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform: translate(-50%, -50%); 
+    text-shadow:-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    text-align: center;
+}
+
+.serviceone img, .servicetwo img{
+    width: 250px; height: 250px; opacity: 0.8; border-radius: 20px;
+}
+
+.catone img, .cattwo img{
+    height:250px; border-radius: 20px; margin: 10px 10px 10px 10px; opacity: 0.8;
+}
+
+.cattwo .img-hover-zoom img, .catone .img-hover-zoom img, .servicetwo .img-hover-zoom img, .serviceone .img-hover-zoom img{
+    transition: transform .5s ease;
+}
+
+.cattwo .img-hover-zoom:hover img, .catone .img-hover-zoom:hover img, .servicetwo .img-hover-zoom:hover img, .serviceone .img-hover-zoom:hover img{
+    transform: scale(1.5);
+}
+
+.servicetwo .img-hover-zoom, .serviceone .img-hover-zoom{
+    height: 250px;
+    overflow: hidden;
+}
+
+.cattwo .img-hover-zoom, .catone .img-hover-zoom{
+    height: 220px;
+    overflow: hidden;
+}
+
+.quicklink {
+    text-align: right;
+}
+
+.quicklink a {
+    text-decoration:none;
+    color: #000;
+}
+
+.bottom {
+    background-color: #76C4AE;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: row;
+}
